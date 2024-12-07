@@ -1,0 +1,23 @@
+#mengimpor modul_program
+import praktikum1_pelanggan
+import praktikum1_barang
+
+global notrans, tgltrans, kdbrg, nmbrg, harga, jumlah
+def input_transaksi():
+  print("\nData Transaksi")
+  print("-----------------------")
+  print("nomor transaksi : ", notrans)
+  print("tanggal transaksi : ", tgltrans)
+  #memanggil_modul_pelanggan
+  praktikum1_pelanggan.input_pelanggaan()
+  
+  #memanggil_modul_barang
+  praktikum1_barang.input_barang()
+  harga = int(input("masukan harga barang : "))
+  jumlah = int(input("masukan jumlah barang : "))
+  total = harga * jumlah
+  print("total : ", total)
+
+notrans = input("masukan nomor transaksi : ")
+tgltrans = input("masukan tanggal transaksi : ")
+input
