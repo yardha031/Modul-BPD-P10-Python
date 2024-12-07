@@ -1,0 +1,15 @@
+#definisi prosedur input_barang
+global kdbrg, nmbrg, satuan, harga
+def input_barang():
+  print("\nData Barang")
+  print("--------------------")
+  print("kode barang : ", kode)
+  print("nama barang : ", nama)
+  print("satuan : ",satuan)
+  print("harga satuan : ",harga)
+
+kode = input("masukan kode barang : ")
+nama = input("masukan nama barang : ")
+satuan = input("masukan satuan barang : ")
+harga = input("masukan harga barang : ")
+input_barang()
